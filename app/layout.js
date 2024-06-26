@@ -1,7 +1,9 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"] });
 
 export const metadata = {
   title: "INFEST 2024 | Investment Festival by KSEP ITB",
@@ -46,8 +48,10 @@ export default function RootLayout({ children }) {
           })}
         </script>
       </head>
-      <body className={inter.className}>
+      <body className={poppins.className}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
