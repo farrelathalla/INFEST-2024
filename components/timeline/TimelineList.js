@@ -18,7 +18,8 @@ export default function TimelineList({ title="Timeline", children}){
             mx-auto
             flex flex-col
             items-center
-            w-[80%]">
+            w-[80%]
+            mb-10">
                 {children}
             </ul>
 
