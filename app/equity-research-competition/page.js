@@ -10,6 +10,7 @@ const EquityResearchCompetitionPage = () => {
     <div className='overflow-x-hidden wrapper'>
       <TitlePrize title={ERC_TITLE} description={ERC_DESC} prizes={ERC_PRIZE} />
       {/* Timeline */}
+      <div className='mt-16'></div>
       <TimelineList>
         <TimelineItem date="5-12 Juli 2024" content="Early-bird Registration" />
         <TimelineItem date="13-20 Juli 2024" content="Normal Registration" />
