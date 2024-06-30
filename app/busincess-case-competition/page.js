@@ -10,6 +10,7 @@ const BusinessCaseCompetitionPage = () => {
     <div className='overflow-x-hidden wrapper'>
       <TitlePrize title={BCC_TITLE} description={BCC_DESC} prizes={BCC_PRIZE} />
       {/* Timeline */}
+      <div className='mt-16'></div>
       <TimelineList>    
         <TimelineItem date="1-10 Juli 2024" content="Normal Registration" />
         <TimelineItem date="11-13 Juli 2024" content="Extended Registration" />

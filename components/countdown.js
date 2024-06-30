@@ -23,21 +23,19 @@ export default function Countdown({ title="Countdown",date }){
     },[])
 
     return (
-        <div className="text-center shadow-dark w-full">
+        <div className="text-center w-full">
             <h2 className='
             relative
             mb-4
             text-[24px]
             poppins-bold 
             inline-block 
-            bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
-            text-transparent 
-            bg-clip-text
+            text-white
             '>{title}</h2>
 
-            <div className="w-[150px] px-3 py-3 rounded-lg mx-auto bg-black text-center">
+            <div className="w-full md:w-[500px] py-8 rounded-[28px] mx-auto bg-black text-center">
                 <p className="
-                text-[20px]
+                text-4xl md:text-5xl
                 poppins-bold
                 inline-block 
                 bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
