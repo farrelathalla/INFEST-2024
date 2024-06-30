@@ -2,11 +2,13 @@ import React from 'react'
 import TimelineList from '@/components/timeline/TimelineList'
 import TimelineItem from '@/components/timeline/TimelineItem'
 import Countdown from '@/components/countdown'
+import TitlePrize from '@/components/competition/TitlePrize'
+import { BCC_TITLE, BCC_DESC, BCC_PRIZE } from "@/components/competition/copywrite";
 
 const BusinessCaseCompetitionPage = () => {
   return (    
-    <div className=' overflow-x-hidden'>
-      BusinessPageCompetitionPage
+    <div className='overflow-x-hidden wrapper'>
+      <TitlePrize title={BCC_TITLE} description={BCC_DESC} prizes={BCC_PRIZE} />
       {/* Timeline */}
       <TimelineList>    
         <TimelineItem date="1-10 Juli 2024" content="Normal Registration" />

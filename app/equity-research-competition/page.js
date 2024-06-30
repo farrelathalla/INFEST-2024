@@ -2,11 +2,13 @@ import React from 'react'
 import TimelineList from '@/components/timeline/TimelineList'
 import TimelineItem from '@/components/timeline/TimelineItem'
 import Countdown from '@/components/countdown'
+import TitlePrize from '@/components/competition/TitlePrize'
+import { ERC_TITLE, ERC_DESC, ERC_PRIZE } from "@/components/competition/copywrite";
 
 const EquityResearchCompetitionPage = () => {
   return (
-    <div className=' overflow-x-hidden'>
-      EquityResearchCompetitionPage
+    <div className='overflow-x-hidden wrapper'>
+      <TitlePrize title={ERC_TITLE} description={ERC_DESC} prizes={ERC_PRIZE} />
       {/* Timeline */}
       <TimelineList>
         <TimelineItem date="5-12 Juli 2024" content="Early-bird Registration" />
