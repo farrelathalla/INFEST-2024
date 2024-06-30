@@ -4,13 +4,13 @@ const EventPage = () => {
   const gradient_font = 'bg-gradient-to-r from-[#678BFF] to-[#9E77FB] text-transparent bg-clip-text'
 
   return (
-    <div className="wrapper">
+    <div className="wrapper flex flex-col gap-y-8 md:gap-y-2">
       <section className='flex flex-col justify-center items-center md:items-start w-full'>
         <h1 className={`my-[1vw] font-bold ${gradient_font} text-[36px] md:text-[4vw]`}>Pre Event</h1>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <p className='
           my-[1vw] 
-          px-[2vw] py-[4vw] 
+          px-4 md:px-[2vw] py-[4vw] 
           bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
           rounded-xl w-full md:w-[50%]
           text-white text-justify
@@ -23,7 +23,7 @@ const EventPage = () => {
             py-[2vw] md:px-[6vw]
             bg-dark-primary 
             text-center w-full md:w-auto
-            rounded-md'>
+            rounded-[14px]'>
               <p className= {`${gradient_font} font-medium`}>Pre Event 1</p>
               <p className= {`${gradient_font} font-medium`}>10/08/24</p>
             </div>
@@ -32,7 +32,7 @@ const EventPage = () => {
             py-[2vw] md:px-[6vw]
             bg-dark-primary 
             text-center w-full md:w-auto
-            rounded-md'>
+            rounded-[14px]'>
               <p className= {`${gradient_font} font-medium`}>Pre Event 2</p>
               <p className= {`${gradient_font} font-medium`}>11/08/24</p>
             </div>
@@ -43,6 +43,7 @@ const EventPage = () => {
         <h1 className={`my-[1vw] font-bold ${gradient_font} text-[36px] md:text-[4vw]`}>Main Event</h1>
         <div className='flex flex-col-reverse md:flex-row items-center justify-between w-full'>
           <div className='
+          mt-4 md:mt-0
           my-[1vw] mx-[4vw]
           p-[3.5vw]
           bg-dark-primary 
@@ -54,7 +55,7 @@ const EventPage = () => {
           </div>
           <p className='
           my-[1vw] 
-          px-[2vw] py-[4vw] 
+          px-4 md:px-[2vw] py-[4vw] 
           bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
           rounded-xl w-full md:w-[50%]
           text-white text-justify 
