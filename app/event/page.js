@@ -2,8 +2,9 @@ import React from 'react'
 
 const EventPage = () => {
   const gradient_font = 'bg-gradient-to-r from-[#678BFF] to-[#9E77FB] text-transparent bg-clip-text'
+
   return (
-    <div className="mx-[8vw] my-[2vw]">
+    <div className="wrapper">
       <section className='flex flex-col justify-center items-start'>
         <h1 className={`my-[1vw] font-bold ${gradient_font} text-[4vw]`}>Pre Event</h1>
         <div className="flex flex-row items-center justify-between">
