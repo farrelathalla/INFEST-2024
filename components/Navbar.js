@@ -34,7 +34,7 @@ const Navbar = () => {
           }`}>ERC</Link>
         </div>
         <div className='hidden md:block'>
-          <button href='' className='md:text-2xl text-white poppins-semibold background-card-gradient md:px-10 md:py-3 rounded-md hover:background-page-gradient mr-[90px]'>Daftar</button>
+          <button href='' className='md:text-2xl text-white poppins-semibold background-card-gradient md:px-10 md:py-3 rounded-md hover:background-page-gradient shadow-dark mr-[90px]'>Daftar</button>
         </div>
         <div  className='w-[500px] h-[500px] block md:hidden'>
           <Image src={Menu} width={30}/>
