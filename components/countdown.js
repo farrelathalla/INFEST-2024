@@ -23,7 +23,7 @@ export default function Countdown({ title="Countdown",date }){
     },[])
 
     return (
-        <div className="text-center">
+        <div className="text-center shadow-dark w-full">
             <h2 className='
             relative
             mb-4
@@ -35,7 +35,7 @@ export default function Countdown({ title="Countdown",date }){
             bg-clip-text
             '>{title}</h2>
 
-            <div className="w-[150px] px-3 py-3 rounded-lg mx-auto bg-white text-center">
+            <div className="w-[150px] px-3 py-3 rounded-lg mx-auto bg-black text-center">
                 <p className="
                 text-[20px]
                 poppins-bold
