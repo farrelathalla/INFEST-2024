@@ -7,7 +7,7 @@ const KetentuanLomba = ({ title, competition, buttonTitle }) => {
       <h3 className='text-3xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#678BFF] to-[#9E77FB] font-bold'>{title}</h3>
       {
         competition === 'BCC' && (
-          <div className='rounded-[28px] bg-gradient-to-br from-[#678BFF] to-[#9E77FB] max-w-[750px] px-16 py-8 text-start flex flex-col gap-y-2' style={{ boxShadow: '0 4px 8px rgba(113, 103, 255, 0.5), 0 6px 20px rgba(113, 103, 255, 0.5)' }}>
+          <div className='text-[14px] md:text-[16px] rounded-[28px] bg-gradient-to-br from-[#678BFF] to-[#9E77FB] max-w-[750px] px-8 md:px-16 py-8 text-start flex flex-col gap-y-2' style={{ boxShadow: '0 4px 8px rgba(113, 103, 255, 0.5), 0 6px 20px rgba(113, 103, 255, 0.5)' }}>
             <p>1. Tim beranggotakan <span className='font-bold'>2-3 orang</span> mahasiswa aktif program Diploma/ S1 di Indonesia yang berasal dari perguruan tinggi yang sama.</p>
             <p>2. Setiap anggota tim harus memiliki <span className='font-bold'>Kartu Tanda Mahasiswa (KTM)</span> yang akan dikumpulkan melalui form registrasi.</p>
             <p>3. <span className='font-bold'>Setiap perguruan tinggi</span> boleh mengirim <span className='font-bold'>lebih dari 1 tim.</span></p>
