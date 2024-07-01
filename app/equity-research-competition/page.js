@@ -42,13 +42,13 @@ const EquityResearchCompetitionPage = () => {
         src={BG1}
         height={900}
         width={900}
-        className="sparkle-effect -z-20 absolute right-0 transform translate-x-[20vw] translate-y-[-150vh] overflow-hidden"
+        className="sparkle-effect -z-20 absolute right-0 transform translate-x-[20vw] translate-y-[-105vh] overflow-hidden"
       />
       <Image 
         src={BG2}
         height={1300}
         width={1300}
-        className="sparkle-effect -z-20 absolute object-cover left-0 transform translate-x-[-25vw] translate-y-[-10vh]  overflow-hidden"
+        className="sparkle-effect -z-20 absolute object-cover left-0 transform translate-x-[-25vw] translate-y-[15vh]  overflow-hidden"
       />
       <Image 
         src={BG3}
