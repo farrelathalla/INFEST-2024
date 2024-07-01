@@ -62,7 +62,7 @@ const TimeLineHorizontal = () => {
           </div>
           <div className="timeline-end timeline-box">
             <p className="poppins-semibold">ERC Registration</p>
-            <span className="poppins-medium">1 - 13 Juli 2024</span>
+            <span className="poppins-medium">5 - 24 Juli 2024</span>
           </div>
           <hr />
         </li>
@@ -94,7 +94,7 @@ const TimeLineHorizontal = () => {
           <hr />
           <div className="timeline-start timeline-box">
             <p className="poppins-semibold">Pengumuman Qualification Round</p>
-            <span className="poppins-medium">1 - 13 Juli 2024</span>
+            <span className="poppins-medium">3 Agustus 2024</span>
           </div>
           <div className="timeline-middle">
             <img src="/ellipse.svg"></img>

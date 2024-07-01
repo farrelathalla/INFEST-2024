@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex justify-between items-center bg-[#CCCBE7] fixed top-0 w-screen z-20 h-[80px] ' style={{ boxShadow: '0 4px 8px rgba(113, 103, 255, 0.5), 0 6px 20px rgba(113, 103, 255, 0.5)' }}>
+    <div className='flex justify-between items-center bg-white md:bg-[#CCCBE7] fixed top-0 w-screen z-20 h-[80px] ' style={{ boxShadow: '0 4px 8px rgba(113, 103, 255, 0.5), 0 6px 20px rgba(113, 103, 255, 0.5)' }}>
       <div className=''>
         <Image
           src={Logo}

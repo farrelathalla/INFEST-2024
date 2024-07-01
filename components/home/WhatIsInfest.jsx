@@ -12,7 +12,7 @@ const WhatIsInfest = () => {
       </h1>
       <div>
         <div className='mt-4 g-gradient-to-r from-[#678BFF] to-[#9E77FB] rounded-[14px] shadow-primary p-4 bg-gradient-to-br px-8 py-4 max-w-[750px]'>
-          <p>
+          <p className='text-center'>
             <span className='text-center font-extrabold text-transparent bg-gradient-to-r bg-clip-text from-[#461A64] to-[#3126B0]'>
               Investment Festival (INFEST)
             </span> adalah acara tahunan yang diselenggarakan oleh KSEP ITB. Dimeriahkan dengan lomba equity research, business case competition (BCC), dan talkshow/seminar yang menjadi acara utama.
