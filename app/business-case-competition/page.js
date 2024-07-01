@@ -38,7 +38,7 @@ const BusinessCaseCompetitionPage = () => {
         </TimelineList>
 
         {/* Countdown */}
-        <Countdown date={"07/04/2024 23:59:59"}  />
+        <Countdown date={"06/30/2024 00:00:00"}  />
 
         <FAQCompetitions />
       </div>

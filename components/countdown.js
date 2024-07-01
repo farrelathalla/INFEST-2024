@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import React from "react";
 import { useState, useEffect } from "react";
 
@@ -13,28 +14,26 @@ export default function Countdown({ title="Countdown",date }){
         const interval = setInterval(() => {
             const now = new Date().getTime();
             const difference = target - now;
-            const h = Math.floor(difference / (1000 * 60 * 60));
-            const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const s = Math.floor((difference % (1000 * 60)) / 1000);
-            if (h>9){
-                setHour(h)
-            }else{
-                setHour("0"+h)
-            }
-            if (m>9){
-                setMinute(m)
-            }else{
-                setMinute("0"+m)
-            }
-            if (s>9){
-                setSecond(s)
-            }else{
-                setSecond("0"+s)
-            }
 
-        },1000)
-        return () => clearInterval(interval)
-    },[])
+            if (difference <= 0) {
+                // Waktu sudah habis
+                clearInterval(interval);
+                setHour(0);
+                setMinute(0);
+                setSecond(0);
+            } else {
+                const h = Math.floor(difference / (1000 * 60 * 60));
+                const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+                setHour(h < 10 ? `0${h}` : h);
+                setMinute(m < 10 ? `0${m}` : m);
+                setSecond(s < 10 ? `0${s}` : s);
+            }
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, [date]);
 
     return (
         <div className="text-center w-full">
@@ -50,14 +49,20 @@ export default function Countdown({ title="Countdown",date }){
             '>{title}</h2>
 
             <div className="w-full md:max-w-[500px] py-8 rounded-[8px] mx-auto bg-[#282828] text-center shadow-dark">
-                <p className="
-                text-5xl
-                poppins-bold
-                inline-block 
-                bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
-                text-transparent 
-                bg-clip-text
-                ">{hour} : {minute} : {second}</p>
+                {hour === 0 && minute === 0 && second === 0 ? (
+                    <Link href="/registration" className="text-5xl poppins-bold">Register Now!</Link>
+                ) : (
+                    <p className="
+                        text-5xl
+                        poppins-bold
+                        inline-block 
+                        bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
+                        text-transparent 
+                        bg-clip-text
+                    ">
+                        {hour} : {minute} : {second}
+                    </p>
+                )}
             </div>
         </div>
     )

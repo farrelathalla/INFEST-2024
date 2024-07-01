@@ -45,7 +45,7 @@ const KetentuanLomba = ({ title, competition, buttonTitle }) => {
             <p>11. Peserta <span className='font-bold'>wajib mem-posting twibbon</span> yang disediakan oleh panitia untuk mengikuti lomba.</p>
             <p>12. Peserta <span className='font-bold'>wajib mengikuti ketentuan panitia</span> dan <span className='font-bold'>keputusan panitia tidak dapat diganggu gugat.</span></p>
             <p>13. Biaya Pendaftaran: <br></br> - <span className='font-bold'>Early-Bird Registration:</span> Rp150.000,00 <br></br>- <span className='font-bold'>Normal Registration:</span> Rp200.000,00</p>
-            <Link href='https://forms.gle/7Voy8MreBsyhazyLA' target='_blank' className='w-full flex justify-end mt-10'>
+            <Link href='' target='_blank' className='w-full flex justify-end mt-10'>
               <button className='bg-gradient-to-b from-[#678BFF] to-[#0E1492] rounded-md px-10 py-2 font-semibold'>
                 {buttonTitle}
               </button>
