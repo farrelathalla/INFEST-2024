@@ -30,7 +30,14 @@ html {
     @apply shadow-md shadow-[#000000]/20
   }
 
-
+  .parallax-image {
+    transition: transform 0.3s ease-out; /* Transition for smooth effect */
+  }
+  
+  .sparkle-effect {
+    animation: sparkle 2.5s ease-in-out infinite;
+  }
+  
   /* FONT CLASS */
   .poppins-thin {
     font-family: "Poppins", sans-serif;
@@ -140,4 +147,16 @@ html {
     font-style: italic;
   }
   
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
