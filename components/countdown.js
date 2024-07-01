@@ -49,9 +49,9 @@ export default function Countdown({ title="Countdown",date }){
             bg-clip-text
             '>{title}</h2>
 
-            <div className="w-[130px] md:w-[200px] py-4 rounded-[8px] mx-auto bg-[#282828] text-center shadow-dark">
+            <div className="w-full md:max-w-[500px] py-8 rounded-[8px] mx-auto bg-[#282828] text-center shadow-dark">
                 <p className="
-                text-[20px] md:text-[30px]
+                text-5xl
                 poppins-bold
                 inline-block 
                 bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
