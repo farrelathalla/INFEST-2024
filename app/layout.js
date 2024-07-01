@@ -57,7 +57,9 @@ export default function RootLayout({ children }) {
       </head>
       <body className="poppins-regular">
         <Navbar />
-        {children}
+        <div className="my-[120px] transition-all">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
