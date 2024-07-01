@@ -11,6 +11,9 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "event-card": "url('/bg-event-card.png')",
+        "bcc-card": "url('/bg-bcc-card.png')",
+        "erc-card": "url('/bg-erc-card.png')",
       },
       boxShadow: {
         'custom': '0px 4px 75px rgba(69, 126, 204, 0.5)',
