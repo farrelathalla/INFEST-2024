@@ -30,7 +30,7 @@ const Navbar = () => {
         <Link href='/event'className={`md:text-2xl md:poppins-bold mx-8 md:hover:text-transparent md:bg-clip-text md:hover:background-page-gradient  ${
           pathname === '/event'? 'text-transparent md:background-page-gradient':'text-[#092C4C]'
         }`}>Event</Link>
-        <Link href='/busincess-case-competition' className={`md:text-2xl md:poppins-bold mx-8 md:hover:text-transparent md:bg-clip-text md:background-page-gradient ${
+        <Link href='/business-case-competition' className={`md:text-2xl md:poppins-bold mx-8 md:hover:text-transparent md:bg-clip-text md:background-page-gradient ${
           pathname === '/busincess-case-competition'? 'text-transparent md:background-page-gradient':'text-[#092C4C]'
         }`}>BCC</Link>
         <Link href='/equity-research-competition' className={`md:text-2xl md:poppins-bold mx-8 md:hover:text-transparent md:bg-clip-text md:background-page-gradient ${
