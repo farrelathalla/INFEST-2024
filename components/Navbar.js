@@ -6,6 +6,7 @@ import Logo from '@/public/logoinfest.svg'
 import Menu from '@/public/garistiga.svg'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Skibidi from "@/public/infestskibidi.png"
 
 const Navbar = () => {
   const [isNavVisible, setNavVisible] = useState(false);
@@ -20,8 +21,11 @@ const Navbar = () => {
       <div className=''>
         <Image
           src={Logo}
-          className='h-[80px] min-w-[400px] flex-shrink-0 relative ml-[-35px]'
+          className='h-[80px] min-w-[400px] flex-shrink-0 relative hidden md:block ml-[-35px]'
         />
+        <h3 className='flex md:hidden bg-clip-text text-transparent bg-gradient-to-r from-[#37217B] to-[#457ECC] text-5xl text-start font-extrabold ml-8'>
+          INFEST
+        </h3>
       </div>
       <div className='hidden lg:flex'>
         <Link href='/' className={`md:text-2xl md:poppins-bold mx-8 md:hover:text-transparent md:hover:background-page-gradient md:bg-clip-text ${

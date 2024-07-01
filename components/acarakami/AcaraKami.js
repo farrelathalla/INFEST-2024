@@ -9,7 +9,7 @@ const AcaraKami = ({ title, description, prizes }) => {
         </h1>
         <div className="flex flex-col lg:flex-row justify-center items-center gap-10 mt-10">
           <EventCard title="Event" description="INFEST 2024 memiliki Pre-Event berupa workshop mengenai investasi dan Event berupa talkshow/seminar dengan career talks" image="event-card" url="event"/>
-          <EventCard title="BCC" description="Business Case Competition merupakan kompetisi dalam menganalisis dan menyelesaikan studi kasus bisnis yang telah disediakan" image="bcc-card" url="busincess-case-competition"/>
+          <EventCard title="BCC" description="Business Case Competition merupakan kompetisi dalam menganalisis dan menyelesaikan studi kasus bisnis yang telah disediakan" image="bcc-card" url="business-case-competition"/>
           <EventCard title="ERC" description="Equity Research Competition merupakan kompetisi dalam menganalisis laporan keuangan perusahaan, kondisi pasar, dan faktor relevan lainnya untuk membuat rekomendasi investasi" image="erc-card" url="equity-research-competition"/>
         </div>
     </div>
