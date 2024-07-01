@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Harus dibikin kaya gini, kalau engga ga bakal ngeload imagenya
+ */
+.event-card{
+  @apply bg-event-card;
+}
+
+.bcc-card {
+  @apply bg-bcc-card;
+}
+
+.erc-card {
+  @apply bg-erc-card;
+}
