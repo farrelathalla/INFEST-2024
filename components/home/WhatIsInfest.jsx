@@ -1,5 +1,8 @@
 import React from 'react';
 import Video from "@/public/infestReels.mp4";
+import Link from 'next/link';
+import PlayButton from "@/public/play-button.svg"
+import Image from 'next/image';
 
 const WhatIsInfest = () => {
   return (
@@ -21,6 +24,11 @@ const WhatIsInfest = () => {
           </video>
         </div> */}
       </div>
+      <Link href="https://www.instagram.com/reel/CxUUCq8yPuc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target='_blank' className='mt-6'>
+          <button className='flex gap-x-4 rounded-md py-3 px-6 items-center background-card-gradient hover:background-page-gradient shadow-md'>
+            INFEST Trailer <Image src={PlayButton} height={24} width={24} className='text-white' />
+          </button>
+      </Link>
     </div>
   );
 };

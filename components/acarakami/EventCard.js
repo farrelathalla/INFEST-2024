@@ -6,7 +6,7 @@ import "./eventcard.css";
 const EventCard = ({ title, description, image, url }) => {
   return (
     <div
-      className={`flex-initial md:max-w-[385px] max-w-[266px] h-[400px] md:h-[500px] rounded-3xl px-5 md:px-7 pt-8 md:pt-12 bg-cover ${image} relative shadow-dark`}
+      className={`flex-initial md:max-w-[385px] shadow-primary w-full h-[300px] md:h-[500px] rounded-3xl px-5 md:px-7 pt-8 md:pt-12 bg-cover ${image} relative`}
     >
       <h2 className="text-3xl md:text-5xl font-bold ">
         <span className="bg-gradient-to-r from-[#678BFF] to-[#9E77FB] bg-clip-text text-transparent">{title}</span>
