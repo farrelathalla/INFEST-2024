@@ -1,7 +1,9 @@
+import FAQHome from "@/components/home/FAQHome";
+
 export default function Home() {
   return (
-    <main>
-
+    <main className="wrapper">
+      <FAQHome />
     </main>
   );
 }

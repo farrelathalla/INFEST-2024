@@ -4,6 +4,7 @@ import TimelineItem from '@/components/timeline/TimelineItem'
 import Countdown from '@/components/countdown'
 import TitlePrize from '@/components/competition/TitlePrize'
 import { BCC_TITLE, BCC_DESC, BCC_PRIZE } from "@/components/competition/copywrite";
+import FAQCompetitions from '@/components/competitions/FAQCompetitions'
 
 const BusinessCaseCompetitionPage = () => {
   return (    
@@ -30,6 +31,8 @@ const BusinessCaseCompetitionPage = () => {
 
       {/* Countdown */}
       <Countdown date={"07/04/2024 23:59:59"}  />
+
+      <FAQCompetitions />
     </div>
   )
 }
