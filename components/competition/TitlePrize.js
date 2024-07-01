@@ -33,7 +33,7 @@ const TitlePrize = ({ title, description, prizes }) => {
       <div className="border-black rounded-[28px] w-full max-w-[750px] p-4 bg-gradient-to-r from-[#678BFF] to-[#9E77FB] text-white" style={{ boxShadow: '0 4px 8px rgba(113, 103, 255, 0.5), 0 6px 20px rgba(113, 103, 255, 0.5)' }}>
         <ul className="align-left list-disc list-inside">
           {prizes.map((prize, index) => (
-            <ul key={index} className="text-[18px] md:text-[22px] text-bold">
+            <ul key={index} className="text-[14px] md:text-[22px] text-bold">
               Juara {index + 1}: Rp{prize} + e-sertifikat
             </ul>
           ))}

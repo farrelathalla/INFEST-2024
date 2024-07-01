@@ -50,7 +50,7 @@ export default function Countdown({ title="Countdown",date }){
 
             <div className="w-full md:max-w-[500px] py-8 rounded-[8px] mx-auto bg-[#282828] text-center shadow-dark">
                 {hour === 0 && minute === 0 && second === 0 ? (
-                    <Link href="/registration" className="text-5xl poppins-bold">Register Now!</Link>
+                    <Link href="/registration" className="text-3xl poppins-bold">Register Now!</Link>
                 ) : (
                     <p className="
                         text-5xl

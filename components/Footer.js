@@ -6,6 +6,7 @@ import Instagram from '@/public/instagram.svg'
 import Line from '@/public/line.svg'
 import Tiktok from '@/public/tiktok.svg'
 import Whatsapp from '@/public/whatsapp.svg' 
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -15,21 +16,27 @@ const Footer = () => {
           <h1 className='poppins-semibold text-3xl text-transparent bg-clip-text background-card-gradient'>Social Media</h1>
           <p className='m-3 text-lg w-[300px] md:w-[400px] mt-5'>Follow us on social media to find out the latest updates on our event</p>
           <div className='flex justify-center m-3'>
-            <Image
-              src={Linkedin}
-              width={40}
-              className='m-3'
-            />
-            <Image
-              src={Instagram}
-              width={40}
-              className='m-3'
-            />
-            <Image 
-              src={Tiktok}
-              width={40}
-              className='m-3'
-            />
+            <Link href="https://www.linkedin.com/company/investment-festival-itb/mycompany/" target='_blank'>
+              <Image
+                src={Linkedin}
+                width={40}
+                className='m-3'
+              />
+            </Link>
+            <Link href="https://www.instagram.com/infest.bdg/" target='_blank'>
+              <Image
+                src={Instagram}
+                width={40}
+                className='m-3'
+              />
+            </Link>
+            <Link href="https://www.tiktok.com/@infest.bdg" target='_blank'>
+              <Image 
+                src={Tiktok}
+                width={40}
+                className='m-3'
+              />
+            </Link>
           </div>
         </div>
         <div className='md:m-0 w-full flex flex-col items-center'>
