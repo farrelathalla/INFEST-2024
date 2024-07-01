@@ -38,7 +38,7 @@ const Navbar = () => {
         }`}>ERC</Link>
       </div>
       <div className='hidden lg:block'>
-        <button href='' className='text-white poppins-semibold background-card-gradient md:px-10 md:py-3 rounded-md hover:background-page-gradient mr-[90px]'>Daftar</button>
+        <button href='' className='text-white poppins-semibold background-card-gradient md:px-10 md:py-3 rounded-md hover:background-page-gradient mr-[90px]'>Coming Soon!</button>
       </div>
       <button className='flex lg:hidden mr-[35px]' onClick={toggleNav}>
         <Image 
@@ -77,7 +77,7 @@ const Navbar = () => {
         }`}>
           ERC
         </Link>
-        <button href='' className='text-white poppins-semibold mt-20 background-card-gradient px-10 py-3 rounded-md hover:background-page-gradient '>Daftar</button>
+        <button href='' className='text-white poppins-semibold mt-20 background-card-gradient px-10 py-3 rounded-md hover:background-page-gradient '>Coming Soon!</button>
       </div>
     </div>
   )
