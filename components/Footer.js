@@ -9,8 +9,8 @@ import Whatsapp from '@/public/whatsapp.svg'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col bg-[#282828] shadow-dark w-full h-full text-white py-8 px-[60px] poppins-regular items-center'>
-      <div className='flex flex-col md:flex-row md:justify-between text-center'>
+    <div className='flex flex-col bg-[#282828] shadow-dark w-full h-full text-white py-8 md:px-[60px] poppins-regular items-center'>
+      <div className='flex flex-col w-full lg:flex-row gap-20 md:justify-between text-center'>
         <div className='flex flex-col items-center m-5 md:m-0'>
           <h1 className='poppins-semibold text-3xl text-transparent bg-clip-text background-card-gradient'>Social Media</h1>
           <p className='m-3 text-lg w-[300px] md:w-[400px] mt-5'>Follow us on social media to find out the latest updates on our event</p>
@@ -32,10 +32,10 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className='m-5 md:m-0'>
+        <div className='md:m-0 w-full flex flex-col items-center'>
           <h1 className='poppins-semibold text-3xl text-transparent bg-clip-text background-card-gradient'>Contact Information</h1>
-          <div className='flex justify-between'>
-            <div className='mx-20 my-3 text-left'>
+          <div className='flex justify-between w-full px-8 md:max-w-[500px] '>
+            <div className='my-3 text-left'>
               <h2 className='poppins-medium text-2xl my-2'>Event</h2>
               <div className='flex flex-col '>
                 <c className='text-left text-md'>
@@ -73,7 +73,7 @@ const Footer = () => {
                 </c>
               </div>
             </div>
-            <div className='mx-20 my-3 text-right'>
+            <div className='my-3 text-right'>
             <h2 className='poppins-medium text-2xl my-2'>Competition</h2>
               <div className='flex flex-col'>
                 <c className='text-md '>
@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='flex justify-center'>
+      <div className='flex justify-center mt-12'>
         <Image
           src={Copyright}
           with={20}

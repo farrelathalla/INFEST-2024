@@ -4,19 +4,19 @@ export default function TimelineItem({ content,date }){
     return (
         <li data-content={content} className="
         bg-gradient-to-r from-[#678BFF] to-[#9E77FB]
-        flex flex-col items-center w-[125px] sm:w-[200px] py-3 my-4 rounded-2xl text-sm
+        flex flex-col items-center w-[150px] sm:w-[200px] py-3 my-4 rounded-2xl text-sm
         sm:odd:translate-x-[150px] sm:even:translate-x-[-150px]
         odd:translate-x-[90px] even:translate-x-[-90px]
-        relative group shadow-primary
-        after:w-1 after:h-24 sm:after:h-32 after:bg-white after:absolute after:top-0
+        relative group shadow-[0px_0px_7px_1px_#457ECC] md:shadow-[0px_0px_10px_2px_#457ECC]
+        after:w-1 after:h-36 sm:after:h-36 after:bg-white after:absolute after:top-0
         after:translate-y-[-70%] after:rounded-full
         sm:odd:after:translate-x-[-150px] sm:even:after:translate-x-[150px]
         odd:after:translate-x-[-90px] even:after:translate-x-[90px]
         first:after:h-10 first:after:translate-y-[-50%]
         ">
             
-            <p className="poppins-semibold text-[10px] sm:text-base px-2 leading-tight">{content}</p>
-            <p className="poppins-medium text-[8px] sm:text-sm px-2 leading-tight">{date}</p>
+            <p className="poppins-semibold text-[14px] sm:text-base px-2 leading-tight">{content}</p>
+            <p className="poppins-medium text-[12px] sm:text-sm px-2 leading-tight">{date}</p>
 
             {/* circle glow */}
             <span className="
