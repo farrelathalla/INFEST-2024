@@ -34,7 +34,7 @@ const TitlePrize = ({ title, description, prizes }) => {
         <ul className="align-left list-disc list-inside">
           {prizes.map((prize, index) => (
             <ul key={index} className="text-[14px] md:text-[22px] text-bold">
-              Juara {index + 1}: Rp{prize} + e-sertifikat
+              Juara {index + 1}: Rp{prize} + sertifikat
             </ul>
           ))}
         </ul>

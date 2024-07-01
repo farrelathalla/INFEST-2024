@@ -10,6 +10,7 @@ import BG1 from "@/public/ornaments/12.svg"
 import BG2 from "@/public/ornaments/3.svg"
 import BG3 from "@/public/ornaments/11.svg"
 import Image from 'next/image'
+import FAQCompetitionsERC from '@/components/competitions/FAQCompetitionsERC'
 
 const EquityResearchCompetitionPage = () => {
   return (
@@ -35,7 +36,7 @@ const EquityResearchCompetitionPage = () => {
         {/* Countdown */}
         <Countdown date={"07/04/2024 23:59:59"}  />
 
-        <FAQCompetitions />
+        <FAQCompetitionsERC />
       </div>
       <Image 
         src={BG1}
