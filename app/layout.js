@@ -15,14 +15,6 @@ export const metadata = {
     title: 'INFEST 2024 | Investment Festival by KSEP ITB',
     description: 'Join INFEST 2024, the biggest Investment Festival in Indonesia, organized by KSEP ITB. Learn about investment and capital market through seminars, workshops, and competitions.',
     site_name: 'INFEST ITB 2024',
-    images: [
-      {
-        url: 'https://infestitb2024.com/logo.png',
-        width: 800,
-        height: 600,
-        alt: 'INFEST ITB 2024 Logo'
-      }
-    ]
   }
 };
 
