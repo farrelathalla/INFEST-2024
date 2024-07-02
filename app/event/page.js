@@ -78,7 +78,7 @@ const EventPage = () => {
             rounded-xl
             w-full md:w-[45%]'>
               <p className= {`${gradient_font} underline font-semibold md:text-[2.25vw]`}>5 Oktober 2024</p>
-              <p className= {`${gradient_font} underline font-semibold md:text-[2.25vw]`}>CC Timur ITB</p>
+              <p className= {`${gradient_font} underline font-semibold md:text-[2.25vw]`}>Institut Teknologi Bandung</p>
             </div>
             <p className='
             my-[1vw] 
