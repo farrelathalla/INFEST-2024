@@ -8,7 +8,7 @@ const KetentuanLomba = ({ title, competition, buttonTitle }) => {
       {
         competition === 'BCC' && (
           <div className='text-[14px] md:text-[16px] rounded-[28px] bg-gradient-to-br from-[#678BFF] to-[#9E77FB] max-w-[750px] px-8 md:px-16 py-8 text-start flex flex-col gap-y-2' style={{ boxShadow: '0 4px 8px rgba(113, 103, 255, 0.5), 0 6px 20px rgba(113, 103, 255, 0.5)' }}>
-            <p>1. Tim beranggotakan <span className='font-bold'>2-3 orang</span> mahasiswa aktif program Diploma/ S1 di Indonesia yang berasal dari perguruan tinggi yang sama.</p>
+            <p>1. Tim beranggotakan <span className='font-bold'>2-3 orang</span> mahasiswa aktif program Diploma / S1 di Indonesia.</p>
             <p>2. Setiap anggota tim harus memiliki <span className='font-bold'>Kartu Tanda Mahasiswa (KTM)</span> yang akan dikumpulkan melalui form registrasi.</p>
             <p>3. <span className='font-bold'>Setiap perguruan tinggi</span> boleh mengirim <span className='font-bold'>lebih dari 1 tim.</span></p>
             <p>4. Setiap peserta <span className='font-bold'>tidak</span> diperbolehkan berada pada <span className='font-bold'>lebih dari 1 tim.</span></p>
@@ -32,7 +32,7 @@ const KetentuanLomba = ({ title, competition, buttonTitle }) => {
       {
         competition === 'ERC' && (
           <div className='text-[14px] md:text-[16px] rounded-[28px] bg-gradient-to-br from-[#678BFF] to-[#9E77FB] max-w-[750px] px-8 md:px-16 py-8 text-start flex flex-col gap-y-2' style={{ boxShadow: '0 4px 8px rgba(113, 103, 255, 0.5), 0 6px 20px rgba(113, 103, 255, 0.5)' }}>
-            <p>1. Tim beranggotakan <span className='font-bold'>2-3 orang</span> mahasiswa aktif program Diploma/ S1 di Indonesia yang berasal dari perguruan tinggi yang sama.</p>
+            <p>1. Tim beranggotakan <span className='font-bold'>2-3 orang</span> mahasiswa aktif program Diploma / S1 di Indonesia.</p>
             <p>2. Setiap anggota tim harus memiliki <span className='font-bold'>Kartu Tanda Mahasiswa (KTM)</span> yang akan dikumpulkan melalui form registrasi.</p>
             <p>3. <span className='font-bold'>Setiap perguruan tinggi</span> boleh mengirim <span className='font-bold'>lebih dari 1 tim.</span></p>
             <p>4. Setiap peserta <span className='font-bold'>tidak</span> diperbolehkan berada pada <span className='font-bold'>lebih dari 1 tim.</span></p>
@@ -45,7 +45,7 @@ const KetentuanLomba = ({ title, competition, buttonTitle }) => {
             <p>11. Peserta <span className='font-bold'>wajib mem-posting twibbon</span> yang disediakan oleh panitia untuk mengikuti lomba.</p>
             <p>12. Peserta <span className='font-bold'>wajib mengikuti ketentuan panitia</span> dan <span className='font-bold'>keputusan panitia tidak dapat diganggu gugat.</span></p>
             <p>13. Biaya Pendaftaran: <br></br> - <span className='font-bold'>Early-Bird Registration:</span> Rp150.000,00 <br></br>- <span className='font-bold'>Normal Registration:</span> Rp200.000,00</p>
-            <Link href='' target='_blank' className='w-full flex justify-end mt-10'>
+            <Link href='https://forms.gle/7Voy8MreBsyhazyLA' target='_blank' className='w-full flex justify-end mt-10'>
               <button className='bg-gradient-to-b from-[#678BFF] to-[#0E1492] rounded-md px-10 py-2 font-semibold'>
                 {buttonTitle}
               </button>
