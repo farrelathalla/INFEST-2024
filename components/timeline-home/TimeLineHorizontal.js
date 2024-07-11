@@ -129,7 +129,7 @@ const TimeLineHorizontal = () => {
             <img src="/ellipse.svg" ></img>
           </div>
           <div className="timeline-end timeline-box">
-            <p className="poppins-semibold">Pengumuman Finasil BCC</p>
+            <p className="poppins-semibold">Pengumuman Finalis BCC</p>
             <span className="poppins-medium">4 September 2024</span>
           </div>
           <hr />
