@@ -1,1 +1,3 @@
-## Investment Festival by KSEP ITB
+# Investment Festival 2024 
+
+![Thumbnail](./public/Thumbnail.png)
