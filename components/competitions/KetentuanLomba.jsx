@@ -21,11 +21,11 @@ const KetentuanLomba = ({ title, competition, buttonTitle }) => {
             <p>11. Peserta <span className='font-bold'>tidak diperbolehkan untuk menyebarkan case perusahaan kepada pihak eksternal</span> yang tidak mengikuti perlombaan Business Case Competition ini.</p>
             <p>12. Peserta <span className='font-bold'>wajib mengikuti ketentuan panitia</span> dan <span className='font-bold'>keputusan panitia tidak dapat diganggu gugat.</span></p>
             <p>13. Biaya Pendaftaran Free* <br></br><span className='text-sm'>*Jika peserta dinyatakan lolos Qualification, maka peserta harus membayar Rp180.000,00 untuk dapat melanjutkan ke tahap Preliminary Round.</span></p>
-            <Link href='https://forms.gle/NgCTTZcgnCqwBrCZA' target='_blank' className='w-full flex justify-end mt-10'>
+            {/* <Link href='https://forms.gle/NgCTTZcgnCqwBrCZA' target='_blank' className='w-full flex justify-end mt-10'>
               <button className='bg-gradient-to-b from-[#678BFF] to-[#0E1492] rounded-md px-10 py-2 font-semibold'>
                 {buttonTitle}
               </button>
-            </Link>
+            </Link> */}
           </div>
         )
       }

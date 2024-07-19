@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import { useWindowScroll } from 'react-use';
 import BG1 from "@/public/ornaments/10.svg"
 import Image from 'next/image'
+import Link from 'next/link';
 
 const EventPage = () => {
   const gradient_font = 'bg-gradient-to-r from-[#678BFF] to-[#9E77FB] text-transparent bg-clip-text'
@@ -35,15 +36,22 @@ const EventPage = () => {
         <section className='flex flex-col justify-center items-center md:items-start w-full'>
           <h1 className={`my-[1vw] font-bold ${gradient_font} text-[36px] md:text-[4vw]`}>Pre Event</h1>
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <p className='
+            <div className='
             my-[1vw] 
             px-4 md:px-[2vw] py-[4vw] 
             bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
             rounded-xl w-full md:w-[50%]
-            text-white text-justify
+            text-white text-justify flex flex-col gap-y-8
             shadow-[0px_0px_15px_3px_#457ECC] md:shadow-[0px_0px_20px_5px_#457ECC]'>
-              INFEST 2024 memiliki pre-event berupa workshop yang akan dilaksanakan selama dua hari. Dalam acara ini, peserta akan mendapatkan pengetahuan lebih mendalam mengenai <b className='text-purple-primary'>investasi dan kesempatan untuk menerapkan secara langsung</b> sebagai hasil dari materi yang disampaikan, sambil membangun relasi antar investor.
-            </p>
+              <p>
+                INFEST 2024 memiliki pre-event berupa workshop yang akan dilaksanakan selama dua hari. Dalam acara ini, peserta akan mendapatkan pengetahuan lebih mendalam mengenai <b className='text-purple-primary'>investasi dan kesempatan untuk menerapkan secara langsung</b> sebagai hasil dari materi yang disampaikan, sambil membangun relasi antar investor.
+              </p>
+              <Link className="w-full flex justify-center" href="https://docs.google.com/forms/d/e/1FAIpQLSd5O43A3dzXjlxbMgm8MVufrgrSHvZnyTrHQfFzgFMHxsoecw/viewform?usp=pp_ur" target='_blank'>
+                <button className={`bg-dark-primary rounded-md px-6 py-3`}>
+                  <p className= {`${gradient_font} font-medium`}>Register Pre Event</p>
+                </button>
+              </Link>
+            </div>
             <div className='flex flex-row justify-center items-center w-full md:w-auto space-x-4'>
               <div className='
               my-[1pc] md:my-[1vw]
