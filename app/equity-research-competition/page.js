@@ -21,7 +21,6 @@ const EquityResearchCompetitionPage = () => {
         <TimelineList>
           <TimelineItem date="5-12 Juli 2024" content="Early-bird Registration" />
           <TimelineItem date="13-20 Juli 2024" content="Normal Registration" />
-          <TimelineItem date="21-24 Juli 2024" content="Extended Registration" />
           <TimelineItem date="29 Juli-29 Agustus 2024" content="Pengerjaan Paper" />
           <TimelineItem date="29 Agustus 2024 (23.59 WIB)" content="Pengumpulan Paper" />
           <TimelineItem date="12 September 2024" content="Pengumuman Finalis" />
