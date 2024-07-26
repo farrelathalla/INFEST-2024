@@ -84,7 +84,7 @@ const Footer = () => {
             <h2 className='poppins-medium text-2xl my-2'>Competition</h2>
               <div className='flex flex-col'>
                 <c className='text-md '>
-                  <div  className='poppins-bold'>Reivaldo Joan</div>
+                  <div  className='poppins-bold'>Vincent Andrew S.</div>
                   <div className='flex justify-end'>
                     <n className='mx-2' >0895348018385</n>
                     <Image src={Whatsapp} width={15}/>
@@ -95,7 +95,7 @@ const Footer = () => {
                   </div>
                 </c>
                 <c className='text-md '>
-                  <div  className='poppins-bold'>Vincent Andrew S.</div>
+                  <div  className='poppins-bold'>Reivaldo Joan</div>
                   <div className='flex justify-end'>
                     <n className='mx-2' >089604076107</n>
                     <Image src={Whatsapp} width={15}/>

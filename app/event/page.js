@@ -46,7 +46,7 @@ const EventPage = () => {
               <p>
                 INFEST 2024 memiliki pre-event berupa workshop yang akan dilaksanakan selama dua hari. Dalam acara ini, peserta akan mendapatkan pengetahuan lebih mendalam mengenai <b className='text-purple-primary'>investasi dan kesempatan untuk menerapkan secara langsung</b> sebagai hasil dari materi yang disampaikan, sambil membangun relasi antar investor.
               </p>
-              <Link className="w-full flex justify-center" href="https://docs.google.com/forms/d/e/1FAIpQLSd5O43A3dzXjlxbMgm8MVufrgrSHvZnyTrHQfFzgFMHxsoecw/viewform?usp=pp_ur" target='_blank'>
+              <Link className="w-full flex justify-center" href="https://docs.google.com/forms/d/e/1FAIpQLSedmGM6zHx6yxFoWdkVFP47wqGLA670BrP3R-XeOdMyYSwh2w/viewform?usp=pp_url" target='_blank'>
                 <button className={`bg-dark-primary rounded-md px-6 py-3`}>
                   <p className= {`${gradient_font} font-medium`}>Register Pre Event</p>
                 </button>
