@@ -238,7 +238,7 @@ const DaftarPage = () => {
               </label>
             </div>
               <div className='space-y-4'>
-                <label className='flex'>
+                <label className='mt-4 md:mt-0 flex'>
                     <CustomRadioButton
                     name="media"
                     value="Event KSEP ITB"
