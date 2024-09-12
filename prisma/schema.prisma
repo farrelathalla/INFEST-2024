@@ -9,6 +9,27 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "cockroachdb"
   url      = env("DATABASE_URL")
+}
+
+model Widget {
+  id String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+}
+model Register {
+  id String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid 
+  email String
+  fullName String
+  status Status
+  institusi String
+  phoneNumber String
+  media String
+  sesi Int
+  image String
+}
+
+enum Status {
+  SMA
+  Kuliah
+  Publik
 }
