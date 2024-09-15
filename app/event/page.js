@@ -46,11 +46,6 @@ const EventPage = () => {
               <p>
                 INFEST 2024 memiliki pre-event berupa workshop yang akan dilaksanakan selama dua hari. Dalam acara ini, peserta akan mendapatkan pengetahuan lebih mendalam mengenai <b className='text-purple-primary'>investasi dan kesempatan untuk menerapkan secara langsung</b> sebagai hasil dari materi yang disampaikan, sambil membangun relasi antar investor.
               </p>
-              <Link className="w-full flex justify-center" href="https://docs.google.com/forms/d/e/1FAIpQLSedmGM6zHx6yxFoWdkVFP47wqGLA670BrP3R-XeOdMyYSwh2w/viewform?usp=pp_url" target='_blank'>
-                <button className={`bg-dark-primary rounded-md px-6 py-3`}>
-                  <p className= {`${gradient_font} font-medium`}>Register Pre Event</p>
-                </button>
-              </Link>
             </div>
             <div className='flex flex-row justify-center items-center w-full md:w-auto space-x-4'>
               <div className='
@@ -88,7 +83,7 @@ const EventPage = () => {
               <p className= {`${gradient_font} underline font-semibold md:text-[2.25vw]`}>5 Oktober 2024</p>
               <p className= {`${gradient_font} underline font-semibold md:text-[2.25vw]`}>Institut Teknologi Bandung</p>
             </div>
-            <p className='
+            <div className='
             my-[1vw] 
             px-4 md:px-[2vw] py-[4vw] 
             bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
@@ -96,7 +91,12 @@ const EventPage = () => {
             text-white text-justify 
             shadow-[0px_0px_15px_3px_#457ECC] md:shadow-[0px_0px_20px_5px_#457ECC]'>
               Kegiatan main event INFEST 2024 memiliki mata acara utama talkshow/seminar yang akan dilaksanakan selama satu hari disertai kegiatan career talks pada booth yang disediakan. Dalam kegiatan talkshow/seminar ini, akan disampaikan topik yang menarik seputar <b className='text-purple-primary'>investasi dan keuangan, ekonomi, dan pasar modal pada masa sekarang.</b>
-            </p>
+              <Link className="w-full flex justify-center mt-[28px]" href={"/daftar"} target='_blank'>
+                <button className={`bg-dark-primary rounded-md px-6 py-3`}>
+                  <p className= {`${gradient_font} font-medium`}>Register Main Event</p>
+                </button>
+              </Link>
+            </div>
           </div>
         </section>
       </div>
