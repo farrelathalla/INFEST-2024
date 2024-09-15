@@ -276,7 +276,7 @@ const DaftarPage = () => {
               </div>
             </div>
 
-            <h3 className='text-xl font-semibold mt-6'>Sesi apa yang kamu ikuti?</h3>
+            {/* <h3 className='text-xl font-semibold mt-6'>Sesi apa yang kamu ikuti?</h3>
             <div className='space-y-4 mt-2'>
                 <label className='flex'>
                     <CustomRadioButton
@@ -310,7 +310,7 @@ const DaftarPage = () => {
                     onChange={(e) => setFormData({ ...formData, sesi: 4 })}
                     /> <span className='ml-2 font-normal'> Sesi 4</span>
                 </label>
-                </div>
+                </div> */}
                 <button
                     type="button"
                     className="bg-gradient-to-b from-[#3E5399] to-[#9E77FB] text-white font-semibold py-5 px-12 rounded-full self-end text-base md:text-lg mt-5 mr-5 md:mr-8 z-10 ut-button:ut-readying:bg-white/50"
