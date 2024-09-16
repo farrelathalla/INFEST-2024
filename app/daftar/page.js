@@ -86,10 +86,10 @@ const DaftarPage = () => {
                 Pada INFEST 2024, terdapat 4 sesi dengan to, yaitu:
                 </p>
                 <p>
-                1. Is Cryptocurrency the Future of Finance and Money?<br></br>
-                2. Sustainable Investing: What You Didn't Know Could Make You Money!<br></br>
-                3. Breaking Barriers: Youth Shaping Indonesia's Financial Future<br></br>
-                4.
+                1. Tech and ESG Companies: Unveiling Tomorrow's Market Leaders (08.30 - 11.30) <br />
+                2. Cryptocurrency: Is Cryptocurrency the Future of Finance and Money? (12.00 - 14.00) <br />
+                3. Breaking Barriers: Youth Shaping Indonesia's Financial Future (14.00 - 16.00) <br />
+                4. From Zero to Millionaire: Lo Kheng Hong’s Blueprint for Success in the Stock Market (16.15 - 18.30) <br />
                 </p>
             </div>
 
