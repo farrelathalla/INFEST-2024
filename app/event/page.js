@@ -91,7 +91,7 @@ const EventPage = () => {
             text-white text-justify 
             shadow-[0px_0px_15px_3px_#457ECC] md:shadow-[0px_0px_20px_5px_#457ECC]'>
               Kegiatan main event INFEST 2024 memiliki mata acara utama talkshow/seminar yang akan dilaksanakan selama satu hari disertai kegiatan career talks pada booth yang disediakan. Dalam kegiatan talkshow/seminar ini, akan disampaikan topik yang menarik seputar <b className='text-purple-primary'>investasi dan keuangan, ekonomi, dan pasar modal pada masa sekarang.</b>
-              <Link className="w-full flex justify-center mt-[28px]" href={"/daftar"} target='_blank'>
+              <Link className="w-full flex justify-center mt-[28`px]" href={"/daftar"} target='_blank'>
                 <button className={`bg-dark-primary rounded-md px-6 py-3`}>
                   <p className= {`${gradient_font} font-medium`}>Register Main Event</p>
                 </button>
