@@ -83,7 +83,7 @@ const UploadImagePage = () => {
                             <p className="text-sm md:text-base"> 
                             Commitment fee bertujuan untuk memastikan keikutsertaan peserta dalam kegiatan di INFEST 2024. 
                             Commitment fee INFEST 2024 berupa Rp. 20.000,- dan akan dikembalikan berupa tunai setelah sesi terakhir 
-                            yang diikuti berakhir (Contoh: Jika anda mengikuti sesi 1 dan 3, maka commitment fee akan dikembalikan setelah sesi 3). 
+                            yang diikuti berakhir. 
                             Pembayaran commitment fee dapat dikirimkan melalui:
                             </p>
                             <p className="text-sm md:text-base">
