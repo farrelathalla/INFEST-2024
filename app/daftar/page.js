@@ -80,7 +80,7 @@ const DaftarPage = () => {
                 📍 Aula Barat, Institut Teknologi Bandung
                 </p>
                 <p>
-                🕣 - Selesai
+                🕣 08.30 - 18.30
                 </p>
                 <p>
                 Pada INFEST 2024, terdapat 4 sesi dengan to, yaitu:
@@ -193,7 +193,7 @@ const DaftarPage = () => {
             <h3 className='text-xl font-semibold mt-6'> WhatsApp (example: '081234658990) <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#461A64] to-[#3126B0]'> * </span></h3>
             <input
               name="phoneNumber"
-              type="tel"
+              type="text"
               value={formData.phoneNumber}
               onChange={handleInputChange}
               placeholder="Phone number"
