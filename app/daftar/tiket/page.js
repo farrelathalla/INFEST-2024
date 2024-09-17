@@ -5,8 +5,10 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Bg from '@/public/bg-daftar.svg';
 import Bg2 from '@/public/bg-daftar-2.svg';
+import { useToast } from "@/hooks/use-toast";
 
 const UploadImagePage = () => {
+  const { toast } = useToast();
   const [imageUrl, setImageUrl] = useState("");
   const [fileName, setFileName] = useState("");
   const [data, setData] = useState(null);
@@ -30,7 +32,11 @@ const UploadImagePage = () => {
     // Retrieve the form data from localStorage
     const formData = JSON.parse(localStorage.getItem("registerData"));
     if (!formData || !imageUrl) {
-      alert("Please complete the form and upload an image.");
+      toast({
+        title:"Please upload an image!",
+        description: "Image is not selected",
+        variant:"destructive",
+      })
       return;
     }
 
@@ -109,7 +115,7 @@ const UploadImagePage = () => {
                     </div>
                     <div className="flex justify-between">
                     <button onClick={handleBack} className="bg-gradient-to-b from-[#3E5399] to-[#9E77FB] text-white font-semibold py-5 px-12 rounded-full text-base md:text-lg mt-5 z-10">Back</button>
-                    <button onClick={handleSubmit} disabled={!imageUrl || isUploading} className={`bg-gradient-to-b from-[#3E5399] to-[#9E77FB] text-white font-semibold py-5 px-12 rounded-full text-base md:text-lg mt-5 z-10 ${isUploading ? "opacity-50 cursor-not-allowed" : ""}`}>
+                    <button onClick={handleSubmit} disabled={!imageUrl || isUploading} className={`background-card-gradient text-white font-semibold py-5 px-12 rounded-full text-base md:text-lg mt-5 z-10 ${isUploading ? "opacity-50 cursor-not-allowed" : ""}  hover:background-page-gradient`}>
                             Submit
                     </button>
                     </div>
@@ -117,7 +123,7 @@ const UploadImagePage = () => {
             </>
         ):
         (
-            <div className="text-2xl md:text-3xl font-bold [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)] "> Silahkan isi data terlebih dahulu! </div>
+            <div className="text-2xl md:text-3xl font-bold [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)] text-white"> Silahkan isi data terlebih dahulu! </div>
         )}
     </div>
     </section>
