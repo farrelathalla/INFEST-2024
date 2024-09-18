@@ -92,10 +92,121 @@ const EventPage = () => {
             shadow-[0px_0px_15px_3px_#457ECC] md:shadow-[0px_0px_20px_5px_#457ECC]'>
               Kegiatan main event INFEST 2024 memiliki mata acara utama talkshow/seminar yang akan dilaksanakan selama satu hari disertai kegiatan career talks pada booth yang disediakan. Dalam kegiatan talkshow/seminar ini, akan disampaikan topik yang menarik seputar <b className='text-purple-primary'>investasi dan keuangan, ekonomi, dan pasar modal pada masa sekarang.</b>
               <Link className="w-full flex justify-center mt-[28`px]" href={"/daftar"} target='_blank'>
-                <button className={`bg-dark-primary rounded-md px-6 py-3`}>
+                <button className={`bg-dark-primary rounded-md px-6 py-3 mt-[2vw]`}>
                   <p className= {`${gradient_font} font-medium`}>Register Main Event</p>
                 </button>
               </Link>
+            </div>
+          </div>
+        </section>
+        <section className='flex flex-col justify-center items-center'>
+          <h1 className={`my-[1vw] font-bold ${gradient_font} text-[28px] md:text-[3vw]`}>Meet Our Speakers!</h1>
+            <div className='
+            my-[1vw] 
+            px-4 md:px-[2vw] py-[4vw] 
+            bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
+            rounded-xl w-full
+            text-white text-center flex flex-col justify-center items-center
+            shadow-[0px_0px_15px_3px_#457ECC] md:shadow-[0px_0px_20px_5px_#457ECC]'>
+            <h1 className="text-[28px] font-semibold md:text-[3vw]">Session 1</h1>
+            <h2 className="text-[16px] font-medium md:text-[1.5vw] mb-[1.5vw]">Tech and ESG Companies: Unveiling Tomorrow's Market Leaders</h2>
+            <div className='text-white text-justify flex flex-col md:flex-row gap-y-8 justify-center items-center'>
+              <div className='flex flex-col justify-center items-center text-center mx-[1vw] px-[1vw] w-full md:w-[45%]'>
+                <div className="w-[16vw] h-[16vw]">
+                  <Image
+                  src="/speakerNovita.jpeg"
+                  width={750}
+                  height={750}
+                  alt=" Novita Widya Anggraini (Chief Financial Officer of PT. Bank Negara Indonesia (Persero) Tbk.)"
+                  className="object-cover w-full h-full rounded-full"/>
+                </div>
+                <h2 className="text-[16px] font-medium md:text-[1.5vw] mt-[0.5vw]">Novita Widya Anggraini</h2>
+                <p className="font-normal text-[1vw]">Chief Financial Officer of PT. Bank Negara Indonesia (Persero) Tbk.</p>
+              </div>
+              <div className="flex flex-col justify-center items-center text-center mx-[1vw] px-[1vw] w-full md:w-[45%]">
+                <div className="w-[16vw] h-[16vw]">
+                  <Image
+                  src="/speakerEri.jpeg"
+                  width={750}
+                  height={750}
+                  alt="Eri Kusnadi (Direktur Batavia Prosperindo Aset Manajemen)"
+                  className="object-cover w-full h-full rounded-full"/>
+                </div>
+                <h2 className="text-[16px] font-medium md:text-[1.5vw] mt-[0.5vw]">Eri Kusnadi</h2>
+                <p className="font-normal text-[1vw]">Direktur Batavia Prosperindo Aset Manajemen</p>
+              </div>
+            </div>
+          </div>
+          <div className='
+            my-[1vw] 
+            px-4 md:px-[2vw] py-[4vw] 
+            bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
+            rounded-xl w-full
+            text-white text-center flex flex-col justify-center items-center
+            shadow-[0px_0px_15px_3px_#457ECC] md:shadow-[0px_0px_20px_5px_#457ECC]'>
+            <h1 className="text-[28px] font-semibold md:text-[3vw]">Session 2</h1>
+            <h2 className="text-[16px] font-medium md:text-[1.5vw] mb-[1.5vw]">Cryptocurrency: Is Cryptocurrency the Future of Finance and Money?</h2>
+            <div className='text-white text-justify flex flex-col md:flex-row gap-y-8 justify-center items-center'>
+              <div className='flex flex-col justify-center items-center text-center mx-[1vw] px-[1vw] w-full'>
+                <div className="w-[16vw] h-[16vw]">
+                  <Image
+                  src="/speakerOscar.jpeg"
+                  width={750}
+                  height={750}
+                  alt="Oscar Darmawan (Chief Executive Officer of Indodax)"
+                  className="object-cover w-full h-full rounded-full"/>
+                </div>
+                <h2 className="text-[16px] font-medium md:text-[1.5vw] mt-[0.5vw]">Oscar Darmawan</h2>
+                <p className="font-normal text-[1vw]">Chief Executive Officer of Indodax</p>
+              </div>
+            </div>
+          </div>
+          <div className='
+            my-[1vw] 
+            px-4 md:px-[2vw] py-[4vw] 
+            bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
+            rounded-xl w-full
+            text-white text-center flex flex-col justify-center items-center
+            shadow-[0px_0px_15px_3px_#457ECC] md:shadow-[0px_0px_20px_5px_#457ECC]'>
+            <h1 className="text-[28px] font-semibold md:text-[3vw]">Session 3</h1>
+            <h2 className="text-[16px] font-medium md:text-[1.5vw] mb-[1.5vw]">Breaking Barriers: Youth Shaping Indonesia's Financial Future</h2>
+            <div className='text-white text-justify flex flex-col md:flex-row gap-y-8 justify-center items-center'>
+              <div className='flex flex-col justify-center items-center text-center mx-[1vw] px-[1vw] w-full'>
+                <div className="w-[16vw] h-[16vw]">
+                  <Image
+                  src="/speakerBambang.JPG"
+                  width={750}
+                  height={750}
+                  alt="Bambang Brodjonegoro (Former Minister of Finance of Indonesia)"
+                  className="object-cover w-full h-full rounded-full"/>
+                </div>
+                <h2 className="text-[16px] font-medium md:text-[1.5vw] mt-[0.5vw]">Bambang Brodjonegoro</h2>
+                <p className="font-normal text-[1vw]">Former Minister of Finance of Indonesia</p>
+              </div>
+            </div>
+          </div>
+          <div className='
+            my-[1vw] 
+            px-4 md:px-[2vw] py-[4vw] 
+            bg-gradient-to-r from-[#678BFF] to-[#9E77FB] 
+            rounded-xl w-full
+            text-white text-center flex flex-col justify-center items-center
+            shadow-[0px_0px_15px_3px_#457ECC] md:shadow-[0px_0px_20px_5px_#457ECC]'>
+            <h1 className="text-[28px] font-semibold md:text-[3vw]">Session 4</h1>
+            <h2 className="text-[16px] font-medium md:text-[1.5vw] mb-[1.5vw]">From Zero to Millionaire: Lo Kheng Hong’s Blueprint for Success in the Stock Market</h2>
+            <div className='text-white text-justify flex flex-col md:flex-row gap-y-8 justify-center items-center'>
+              <div className='flex flex-col justify-center items-center text-center mx-[1vw] px-[1vw] w-full'>
+                <div className="w-[16vw] h-[16vw]">
+                  <Image
+                  src="/speakerLKH.jpg"
+                  width={750}
+                  height={750}
+                  alt="Lo Kheng Hong (Investor Value Indonesia)"
+                  className="object-cover w-full h-full rounded-full"/>
+                </div>
+                <h2 className="text-[16px] font-medium md:text-[1.5vw] mt-[0.5vw]">Lo Kheng Hong</h2>
+                <p className="font-normal text-[1vw]">Investor Value Indonesia</p>
+              </div>
             </div>
           </div>
         </section>
