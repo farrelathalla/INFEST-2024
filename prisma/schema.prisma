@@ -15,7 +15,7 @@ datasource db {
 
 model Widget {
   id String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-}
+} 
 model Register {
   id String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid 
   email String
@@ -25,7 +25,13 @@ model Register {
   phoneNumber String
   media String
   sesi Int
-  image String
+  image String?
+  place Place @default(Offline)
+}
+
+enum Place {
+  Online
+  Offline
 }
 
 enum Status {

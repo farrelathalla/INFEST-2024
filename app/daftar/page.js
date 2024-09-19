@@ -5,18 +5,21 @@ import { useRouter } from "next/navigation"
 import Image from 'next/image';
 import Bg from '@/public/bg-daftar.svg';
 import Bg2 from '@/public/bg-daftar-2.svg';
+import { useToast } from '@/hooks/use-toast';
 
 const DaftarPage = () => {
+  const { toast } = useToast();
   const router = useRouter();
   const [formData, setFormData] = useState({
     email: '',
     fullName: '',
     status: 'SMA',
-    institusi: '',
+    institusi: 'KSEP',
     phoneNumber: '',
-    media: '',
+    media: 'Instagram',
     sesi: 1,
     image: '', // handle separately
+    place: "Offline",
   });
 
   const [otherInstitusi, setOtherInstitusi] = useState('');
@@ -40,18 +43,58 @@ const DaftarPage = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleNext = () => {
+  const submitForm = async (updatedData) => {
+    try {
+      const response = await fetch('/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(updatedData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Error submitting form');
+      }
+      
+      return response.json();
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  const handleNext = async () => {
     const updatedData = {
       ...formData,
       institusi: selectedInstitusi === 'Yang Lain' ? otherInstitusi : selectedInstitusi,
       media: selectedMedia === 'Yang Lain' ? otherMedia : selectedMedia,
     };
+    
+    if (
+      !updatedData.email.trim() ||
+      !updatedData.fullName.trim() ||
+      !updatedData.phoneNumber.trim()
+    ) {
+      toast({
+        title:"Please fill out the form!",
+        description: "Make sure every form is filled",
+        variant:"destructive",
+      })
+      return; // Do not proceed if validation fails
+    }
 
     // Save form data to localStorage before navigating
     localStorage.setItem('registerData', JSON.stringify(updatedData));
 
-    // Navigate to the image upload page
-    router.push('/daftar/tiket');
+    if (formData.place === "Online") {
+      await submitForm(updatedData);
+      localStorage.setItem("userFullName", formData.fullName);
+      router.push('/daftar/success');
+    } else if (formData.place === "Offline") {
+      localStorage.setItem("userFullName", formData.fullName);
+      // Navigate to the image upload page
+      router.push('/daftar/tiket');
+    }
   };
 
   return (
@@ -311,9 +354,28 @@ const DaftarPage = () => {
                     /> <span className='ml-2 font-normal'> Sesi 4</span>
                 </label>
                 </div> */}
+                <h3 className='text-xl font-semibold mt-6'>Secara apa kamu mengikuti INFEST 2024?</h3>
+                <div className='space-y-4 mt-2'>
+                    <label className='flex'>
+                        <CustomRadioButton
+                        name="place"
+                        value="Offline"
+                        checked={formData.place === "Offline"}
+                        onChange={handleInputChange}
+                        /> <span className='ml-2 font-normal'> Offline </span>
+                    </label>
+                    <label className='flex'>
+                        <CustomRadioButton
+                        name="place"
+                        value="Online"
+                        checked={formData.place === "Online"}
+                        onChange={handleInputChange}
+                        /> <span className='ml-2 font-normal'> Online</span>
+                    </label>
+                    </div>
                 <button
                     type="button"
-                    className="bg-gradient-to-b from-[#3E5399] to-[#9E77FB] text-white font-semibold py-5 px-12 rounded-full self-end text-base md:text-lg mt-5 mr-5 md:mr-8 z-10 ut-button:ut-readying:bg-white/50"
+                    className="background-card-gradient text-white font-semibold py-5 px-12 rounded-full self-end text-base md:text-lg mt-5 mr-5 md:mr-8 z-10 ut-button:ut-readying:bg-white/50 hover:background-page-gradient"
                     onClick={handleNext}
                 >
                     Next

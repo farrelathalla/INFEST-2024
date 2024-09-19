@@ -1,7 +1,7 @@
 import prisma from '@/lib/prisma'; // Ensure you have Prisma set up
 
 export async function POST(req) {
-  const { email, fullName, status, institusi, phoneNumber, media, sesi, image } = await req.json();
+  const { email, fullName, status, institusi, phoneNumber, media, sesi, image, place } = await req.json();
 
   try {
     // Create a new registration record in the database
@@ -15,6 +15,7 @@ export async function POST(req) {
         media,
         sesi,
         image, // This is the uploaded image URL
+        place,
       },
     });
     return new Response(JSON.stringify(newRegister), { status: 200 });

@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 html {
-  @apply bg-gradient-to-b from-[#37217B] to-[#457ECC] min-h-full
+  @apply bg-gradient-to-b from-[#37217B] to-[#457ECC] min-h-full;
 }
 
 @layer utilities {
@@ -18,16 +18,16 @@ html {
     @apply mx-auto p-4 max-w-7xl text-white;
   }
   .background-page-gradient {
-    @apply bg-gradient-to-b from-[#37217B] to-[#457ECC]
+    @apply bg-gradient-to-b from-[#37217B] to-[#457ECC];
   }
   .background-card-gradient {
-    @apply bg-gradient-to-b from-[#9E77FB] to-[#678BFF]
+    @apply bg-gradient-to-b from-[#9E77FB] to-[#678BFF];
   }
   .shadow-primary {
-    @apply shadow-lg shadow-[#457ECC]
+    @apply shadow-lg shadow-[#457ECC];
   }
   .shadow-dark {
-    @apply shadow-md shadow-[#000000]/20
+    @apply shadow-md shadow-[#000000]/20;
   }
 
   .parallax-image {
@@ -146,6 +146,8 @@ html {
     font-weight: 900;
     font-style: italic;
   }
+  :root {
+    --radius: 0.5rem;}
   
 }
 
