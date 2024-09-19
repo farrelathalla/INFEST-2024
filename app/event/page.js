@@ -117,7 +117,7 @@ const EventPage = () => {
                   src="/speakerNovita.jpeg"
                   width={750}
                   height={750}
-                  alt=" Novita Widya Anggraini (Chief Financial Officer of PT. Bank Negara Indonesia (Persero) Tbk.)"
+                  alt="Novita Widya Anggraini (Chief Financial Officer of PT. Bank Negara Indonesia (Persero) Tbk.)"
                   className="object-cover w-full h-full rounded-full"/>
                 </div>
                 <h2 className="text-[16px] font-medium md:text-[1.5vw] mt-[0.5vw]">Novita Widya Anggraini</h2>
