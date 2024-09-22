@@ -16,6 +16,9 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    domains: ['utfs.io'], // Tambahkan domain di sini
+  },
 };
 
 export default nextConfig;
