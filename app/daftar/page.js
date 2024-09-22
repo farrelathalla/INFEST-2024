@@ -89,6 +89,7 @@ const DaftarPage = () => {
     if (formData.place === "Online") {
       await submitForm(updatedData);
       localStorage.setItem("userFullName", formData.fullName);
+      localStorage.setItem("place", formData.place)
       router.push('/daftar/success');
     } else if (formData.place === "Offline") {
       localStorage.setItem("userFullName", formData.fullName);
