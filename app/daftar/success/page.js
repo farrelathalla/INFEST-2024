@@ -6,10 +6,14 @@ import Bg2 from '@/public/bg-daftar-2.svg';
 
 const SuccessPage = () => {
   const [fullName, setFullName] = useState("");
+  const [place, setPlace] = useState("")
 
   useEffect(() => {
     // Retrieve fullName from localStorage
     const savedFullName = localStorage.getItem("userFullName");
+    const place = localStorage.getItem("place")
+
+    if (place) setPlace(place)
 
     // Save the fullName in a constant and remove all localStorage data
     if (savedFullName) {
@@ -32,7 +36,10 @@ const SuccessPage = () => {
             Terima kasih telah mendaftar INFEST 2024!
           </h1>
           <div className='w-[80%] bg-white/30 backdrop-blur-xl p-5 md:p-8 rounded-2xl mt-10 text-white font-medium flex flex-col text-center'>
-            <h3 className="text-2xl md:text-3xl font-bold [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)] "> Kami tunggu kehadiran anda di Aula Barat, Institut Teknologi Bandung pada 5 Oktober 2024 </h3>
+            <h3 className="text-2xl md:text-3xl font-bold [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)] "> 
+              {place === 'Offline' && 'Kami tunggu kehadiran anda di Aula Barat, Institut Teknologi Bandung pada 5 Oktober 2024' }
+              {place === 'Online' && 'Kami menantikan kehadiran Anda di Zoom meeting. Informasi lebih lanjut akan kami kirimkan melalui email.' }
+            </h3>
             <h3 className="text-2xl md:text-3xl font-bold [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)] "> {fullName}</h3>
           </div>
         </>
