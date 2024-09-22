@@ -12,7 +12,11 @@ export async function GET() {
       },
       distinct: ['email'],
     });
-    return NextResponse.json(users, { status: 200 });
+
+    const response = NextResponse.json(users, { status: 200 });
+    response.headers.set('Cache-Control', 'no-store');
+    return response;
+    
   } catch (error) {
     return NextResponse.json({ error: "Failed to fetch users" }, { status: 500 });
   }
