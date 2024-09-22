@@ -5,12 +5,15 @@ const UsersPage = () => {
   const [users, setUsers] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedUser, setSelectedUser] = useState(null);
 
   useEffect(() => {
     // Fetch users data from the API
     const fetchUsers = async () => {
       const res = await fetch("/api/csv");
       const data = await res.json();
+      console.log(data)
       setUsers(data);
       setFilteredUsers(data); // Set filtered users initially to all users
     };
@@ -32,7 +35,7 @@ const UsersPage = () => {
   const downloadCSV = () => {
     const csvData = [["No", "Name", "PhoneNumber", "Email"]]; // CSV Header
     filteredUsers.forEach((user, index) => {
-      csvData.push([index + 1, user.fullName, user.phoneNumber, user.email]);
+      csvData.push([index + 1, user.fullName, user.phoneNumber, user.email, user.image]);
     });
 
     const csvContent = `data:text/csv;charset=utf-8,${csvData.map(e => e.join(",")).join("\n")}`;
@@ -42,6 +45,18 @@ const UsersPage = () => {
     link.setAttribute("download", "users_data.csv");
     document.body.appendChild(link);
     link.click();
+  };
+
+  // Handle opening the modal to show image
+  const openModal = (user) => {
+    setSelectedUser(user);
+    setIsModalOpen(true);
+  };
+
+  // Handle closing the modal
+  const closeModal = () => {
+    setSelectedUser(null);
+    setIsModalOpen(false);
   };
 
   return (
@@ -77,6 +92,15 @@ const UsersPage = () => {
                 <td className="border px-4 py-2">{user.fullName}</td>
                 <td className="border px-4 py-2">{user.phoneNumber}</td>
                 <td className="border px-4 py-2">{user.email}</td>
+                <td className="border px-4 py-2">{user.place}</td>
+                <td className="border px-4 py-2">
+                  <button
+                    onClick={() => openModal(user)}
+                    className="text-blue-500 underline"
+                  >
+                    Show Image
+                  </button>
+                </td>
               </tr>
             ))
           ) : (
@@ -96,6 +120,26 @@ const UsersPage = () => {
       >
         Download CSV
       </button>
+
+      {/* Modal to show image */}
+      {isModalOpen && selectedUser && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white p-8 rounded-lg">
+            <h2 className="text-2xl mb-4">{selectedUser.fullName}'s Image</h2>
+            {selectedUser.image ? (
+              <img src={selectedUser.image} alt={selectedUser.fullName} className="w-64 h-64 object-cover" />
+            ) : (
+              <p>No image available</p>
+            )}
+            <button
+              onClick={closeModal}
+              className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

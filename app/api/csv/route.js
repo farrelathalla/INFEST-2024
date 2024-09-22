@@ -5,11 +5,12 @@ export async function GET() {
   try {
     // Fetch all users from the database
     const users = await prisma.register.findMany({
-      select: {
-        fullName: true,
-        phoneNumber: true,
-        email: true,
+      where: {
+        email: {
+          contains: "@", // Ensure the email contains '@'
+        },
       },
+      distinct: ['email'],
     });
     return NextResponse.json(users, { status: 200 });
   } catch (error) {
