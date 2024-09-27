@@ -61,8 +61,6 @@ const UsersPage = () => {
 
   // TEST
 
-    
-
   return (
     <div className="p-4 flex flex-col items-center">
       <h1 className='text-3xl poppins-extrabold md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#678BFF] to-[#9E77FB] text-center drop-shadow-lg'>
