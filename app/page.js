@@ -62,7 +62,7 @@ export default function Home() {
       </div>
       <div className="parallax-image sparkle-effect -z-20 absolute left-0 bottom-0 transform translate-x-[-20vw] translate-y-[-10vh]">
         <Image ref={refBG3} src={BG3} height={750} width={750} className="object-cover" />
-      </div> 
+      </div>   
     </main>
   );
 }
