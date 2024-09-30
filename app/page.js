@@ -64,5 +64,5 @@ export default function Home() {
         <Image ref={refBG3} src={BG3} height={750} width={750} className="object-cover" />
       </div>   
     </main>
-  );
+  ); 
 }
