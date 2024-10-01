@@ -18,7 +18,7 @@ export default function DropdownFAQ({question, answer}) {
             <div className='flex justify-between poppins-regular pt-2'>
                 <div>
                     <p className='text-white text-[14px] md:text-[16px]'>{answer}</p>
-                </div>
+                </div>  
             </div>
         )}
     </div>
